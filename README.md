@@ -16,7 +16,7 @@ Created by **Claude Opus 5.5**, based on the lecture slides by **Prof. Sang Hoon
 | `ko.html` | Korean page (한국어) |
 | `README.md` | This file |
 
-The two pages share identical code and differ only in the language they display. Each one is a single self-contained HTML file with no build step and no libraries; the only external request is to Google Fonts, with system fonts as the fallback.
+The two pages share identical code and differ only in the language they display. Each one is a single self-contained HTML file with no build step and no libraries; the only external request is to Google Fonts (IBM Plex Sans and Fraunces for Latin text, and Noto Serif KR for Korean, as on the course page), with system fonts as the fallback.
 
 ## What's inside
 
