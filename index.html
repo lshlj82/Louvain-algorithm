@@ -11,7 +11,7 @@
 <style>
 :root{
   --paper:#F1F4F8;--grid:#DFE5EE;--panel:#FFFFFF;--ink:#1B2238;--muted:#566079;--rule:#C7CFDC;
-  --marker:#D11F3A;--edge:#AEB7C7;--none:#BAC2D0;--link:#2F6BDB;--codebg:#EEF1F6;
+  --marker:#D11F3A;--marker-ink:#fff;--edge:#AEB7C7;--none:#BAC2D0;--link:#285FC8;--codebg:#EEF1F6;
   --c0:#2A9D63;--c1:#2F6BDB;--c2:#E5484D;--c3:#0F9DB0;--c4:#E39B0B;--c5:#8E44C8;--c6:#9A6136;--c7:#D9488F;
   --hand:"Fraunces","Noto Serif KR","Iowan Old Style","Palatino Linotype",Georgia,serif;
   --text:"IBM Plex Sans","Noto Serif KR",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -20,11 +20,11 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --paper:#111726;--grid:#1B2335;--panel:#161E30;--ink:#E6EAF3;--muted:#9AA5BC;--rule:#2C3750;
-  --marker:#FF5A6E;--edge:#46536E;--none:#56627A;--link:#6C9BFF;--codebg:#1D2740;
+  --marker:#FF5A6E;--marker-ink:#2A0B12;--edge:#46536E;--none:#56627A;--link:#6C9BFF;--codebg:#1D2740;
   --c0:#3CC383;--c1:#5B8DEF;--c2:#FF6B6F;--c3:#2DC3D6;--c4:#F5B53A;--c5:#B07AF0;--c6:#C98A5C;--c7:#F07AB3;color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#111726;--grid:#1B2335;--panel:#161E30;--ink:#E6EAF3;--muted:#9AA5BC;--rule:#2C3750;
-  --marker:#FF5A6E;--edge:#46536E;--none:#56627A;--link:#6C9BFF;--codebg:#1D2740;
+  --marker:#FF5A6E;--marker-ink:#2A0B12;--edge:#46536E;--none:#56627A;--link:#6C9BFF;--codebg:#1D2740;
   --c0:#3CC383;--c1:#5B8DEF;--c2:#FF6B6F;--c3:#2DC3D6;--c4:#F5B53A;--c5:#B07AF0;--c6:#C98A5C;--c7:#F07AB3;color-scheme:dark}
 *,*::before,*::after{box-sizing:inherit}
 body{margin:0;background-color:var(--paper);color:var(--ink);font-family:var(--text);font-size:16.5px;line-height:1.62;
@@ -68,7 +68,7 @@ button{font:inherit;font-size:14px;padding:5px 11px;border-radius:7px;border:1.5
 button:hover{border-color:var(--ink)}
 button:disabled{opacity:.45;cursor:default;border-color:var(--rule)}
 button.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.seg button[aria-pressed="true"]{background:var(--marker);border-color:var(--marker);color:#fff}
+.seg button[aria-pressed="true"]{background:var(--marker);border-color:var(--marker);color:var(--marker-ink)}
 dl.read{display:grid;grid-template-columns:1fr auto;gap:4px 12px;margin:0;font-size:15px;border-top:1px solid var(--rule);padding-top:10px}
 dl.read dt{color:var(--muted)}
 dl.read dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
@@ -153,11 +153,11 @@ button.theme-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke
     </div>
   </div>
   <div class="strip" aria-label="">
-    <figure><svg id="th0" viewBox="0 0 520 500" role="img"></svg><figcaption data-i18n="th0"></figcaption></figure>
+    <figure><svg id="th0" viewBox="0 0 520 500" role="img" aria-labelledby="th0-cap"></svg><figcaption id="th0-cap" data-i18n="th0"></figcaption></figure>
     <div class="arrow"><b>→</b><span data-i18n="pass1"></span></div>
-    <figure><svg id="th1" viewBox="0 0 520 500" role="img"></svg><figcaption data-i18n="th1"></figcaption></figure>
+    <figure><svg id="th1" viewBox="0 0 520 500" role="img" aria-labelledby="th1-cap"></svg><figcaption id="th1-cap" data-i18n="th1"></figcaption></figure>
     <div class="arrow"><b>→</b><span data-i18n="pass2"></span></div>
-    <figure><svg id="th2" viewBox="0 0 520 500" role="img"></svg><figcaption data-i18n="th2"></figcaption></figure>
+    <figure><svg id="th2" viewBox="0 0 520 500" role="img" aria-labelledby="th2-cap"></svg><figcaption id="th2-cap" data-i18n="th2"></figcaption></figure>
   </div>
   <div class="boxed"><h3 data-i18n="loopH"></h3><p data-i18n="loopP"></p></div>
 </section>
@@ -184,14 +184,14 @@ button.theme-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke
   <h2><span class="n">4</span><span data-i18n="h4"></span></h2>
   <div class="prose">
     <p data-i18n="p4a"></p>
-<pre class="code">import networkx as nx
+<pre class="code" tabindex="0" role="region" aria-label="Python code">import networkx as nx
 
 G = nx.karate_club_graph()
 parts = nx.community.louvain_communities(G, weight="weight", resolution=1,
                                          threshold=1e-07, seed=None)
 Q = nx.community.modularity(G, parts)</pre>
     <p data-i18n="p4b"></p>
-<pre class="code"># pip install python-louvain   (github.com/taynaud/python-louvain)
+<pre class="code" tabindex="0" role="region" aria-label="Python code"># pip install python-louvain   (github.com/taynaud/python-louvain)
 import community as community_louvain
 
 partition_dict = community_louvain.best_partition(G)   # node -> community</pre>
