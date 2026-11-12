@@ -208,7 +208,7 @@ const I18N={
 en:{
  back:"← Network Science: interactive demos · 네트워크 과학 교과목 보조자료",
  title:"The Louvain algorithm, step by step",
- sub:"A supplement to demo 10, <a href=\"https://lshlj82.github.io/network-community/\">Network communities</a>. Watch the algorithm move nodes one at a time, merge communities into supernodes, and give different answers when the order of visits changes.",
+ sub:"A supplement to demo 11, <a href=\"https://lshlj82.github.io/network-community/\">Network communities</a>. Watch the algorithm move nodes one at a time, merge communities into supernodes, and give different answers when the order of visits changes.",
  credit:"Created by Claude Opus 5.5, based on the lecture slides by Prof. Sang Hoon Lee.",
  h1:"Two steps, repeated",
  p1a:"The Louvain algorithm (Blondel, Guillaume, Lambiotte, and Lefebvre, 2008) is named after the Université catholique de Louvain in Louvain-la-Neuve, Belgium. It is a fast, greedy way to maximize the modularity <i>Q</i>. The algorithm starts from the partition into singletons, with every node in a community of its own. Each iteration, or <b>pass</b>, consists of two steps.",
@@ -258,7 +258,7 @@ en:{
 ko:{
  back:"← Network Science: interactive demos · 네트워크 과학 교과목 보조자료",
  title:"단계별로 보는 루뱅 알고리즘",
- sub:"데모 10 <a href=\"https://lshlj82.github.io/network-community/\">네트워크 커뮤니티</a>의 보충 자료입니다. 알고리즘이 노드를 하나씩 옮기고, 커뮤니티를 슈퍼노드로 합치고, 방문 순서가 바뀌면 다른 답을 내는 과정을 직접 확인해 보세요.",
+ sub:"데모 11 <a href=\"https://lshlj82.github.io/network-community/\">네트워크 커뮤니티</a>의 보충 자료입니다. 알고리즘이 노드를 하나씩 옮기고, 커뮤니티를 슈퍼노드로 합치고, 방문 순서가 바뀌면 다른 답을 내는 과정을 직접 확인해 보세요.",
  credit:"이상훈 교수의 강의 슬라이드를 바탕으로 Claude Opus 5.5가 만들었습니다.",
  h1:"두 단계의 반복",
  p1a:"루뱅 알고리즘(Blondel, Guillaume, Lambiotte, Lefebvre, 2008)은 벨기에 루뱅라뇌브에 있는 루뱅 가톨릭 대학교(Université catholique de Louvain)의 이름을 땄습니다. 모듈도 <i>Q</i>를 빠르게, 탐욕적으로 최대화하는 방법입니다. 알고리즘은 모든 노드가 각자 하나의 커뮤니티를 이루는 분할에서 출발합니다. 한 번의 반복, 즉 <b>패스(pass)</b>는 두 단계로 이루어집니다.",
@@ -301,7 +301,7 @@ ko:{
  p4a:"교재를 쓸 당시 NetworkX에는 루뱅 알고리즘이 없어서, 교재는 별도의 <code>community</code> 모듈을 썼습니다. 지금은 NetworkX에 들어 있습니다.",
  p4b:"<code>seed</code>를 고정하면 무작위 순서와 그에 따른 결과를 재현할 수 있습니다. <code>weight=None</code>으로 두면 링크 가중치를 무시합니다. <code>resolution</code>은 일반화된 모듈도의 매개변수 γ이고, 한 패스에서 <i>Q</i>가 <code>threshold</code>보다 적게 늘면 알고리즘이 멈춥니다. 교재에서 쓴 모듈도 같은 방식으로 동작합니다.",
  p4c:"GenLouvain(일반화된 루뱅, MATLAB으로 작성, <a href=\"https://github.com/GenLouvain/GenLouvain\">github.com/GenLouvain/GenLouvain</a>) 같은 변형은 같은 두 단계를 더 일반적인 품질 함수에 적용합니다. 다층 네트워크가 한 예입니다.",
- foot1:"이상훈 교수의 강의 슬라이드를 바탕으로 Claude Opus 5.5가 만들었습니다. 경상국립대학교 <i>네트워크 과학</i> 교과목의 <a href=\"https://lshlj82.github.io/netsci-course-GNU/\">인터랙티브 데모</a> 가운데 데모 10 <a href=\"https://lshlj82.github.io/network-community/\">네트워크 커뮤니티</a>의 보충 자료입니다. 소스는 <a href=\"https://github.com/lshlj82/Louvain-algorithm\">GitHub</a>에 있습니다.",
+ foot1:"이상훈 교수의 강의 슬라이드를 바탕으로 Claude Opus 5.5가 만들었습니다. 경상국립대학교 <i>네트워크 과학</i> 교과목의 <a href=\"https://lshlj82.github.io/netsci-course-GNU/\">인터랙티브 데모</a> 가운데 데모 11 <a href=\"https://lshlj82.github.io/network-community/\">네트워크 커뮤니티</a>의 보충 자료입니다. 소스는 <a href=\"https://github.com/lshlj82/Louvain-algorithm\">GitHub</a>에 있습니다.",
  foot2:"V. D. Blondel, J.-L. Guillaume, R. Lambiotte, and E. Lefebvre, “Fast unfolding of communities in large networks,” <i>J. Stat. Mech.</i> (2008) P10008. F. Menczer, S. Fortunato, and C. A. Davis, <i>A First Course in Network Science</i> (Cambridge University Press, 2020); 한국어판 『네트워크 분석』 (에이콘출판사, 2022). W. W. Zachary, <i>J. Anthropol. Res.</i> <b>33</b>, 452 (1977).",
  themeL:"밝은 화면으로 전환",themeD:"어두운 화면으로 전환"
 }};

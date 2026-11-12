@@ -1,7 +1,7 @@
 # The Louvain Algorithm, Step by Step
 **단계별로 보는 루뱅 알고리즘**
 
-An interactive web demo showing how the Louvain algorithm for community detection works. It is a supplement to demo 10, [Network communities](https://lshlj82.github.io/network-community/), in the [interactive demos](https://lshlj82.github.io/netsci-course-GNU/) for *Network Science* (네트워크 과학) in the Department of Physics, Gyeongsang National University.
+An interactive web demo showing how the Louvain algorithm for community detection works. It is a supplement to demo 11, [Network communities](https://lshlj82.github.io/network-community/), in the [interactive demos](https://lshlj82.github.io/netsci-course-GNU/) for *Network Science* (네트워크 과학) in the Department of Physics, Gyeongsang National University.
 
 Created by **Claude Opus 5.5**, based on the lecture slides by **Prof. Sang Hoon Lee**.
 이상훈 교수의 강의 슬라이드를 바탕으로 Claude Opus 5.5가 만들었습니다.
