@@ -107,6 +107,10 @@ button.theme-btn:hover{border-color:var(--ink)}
 button.theme-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 </style>
 <script>try { const t = localStorage.getItem("netsci-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<style id="ko-emphasis">/* Korean has no true italics: slanted Hangul reads as weak, so Korean emphasis is bold and other Korean italic text stays upright (math and <i> variables keep their slant) */
+html :lang(ko):not(i, i *, var, var *, .katex, .katex *, mjx-container, mjx-container *, svg, svg *), html[data-lang="ko"] :not(i, i *, var, var *, .katex, .katex *, mjx-container, mjx-container *, svg, svg *){font-style:normal}
+html :lang(ko) em, html[data-lang="ko"] em{font-weight:600}
+</style>
 </head>
 <body>
 <button id="themeBtn" class="theme-btn" type="button" aria-label=""></button>
